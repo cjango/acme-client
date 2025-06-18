@@ -19,16 +19,15 @@
       "homepage": "https://afosto.com"
     }
   ],
-  "autoload": {
+  "require": {
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^6.3|^7.0",
+    "league/flysystem": "^1.0|^3.0",
+  },
+    "autoload": {
     "psr-4": {
       "Afosto\\Acme\\": "./src"
     }
-  },
-  "require": {
-    "guzzlehttp/guzzle": "^6.3|^7.0",
-    "league/flysystem": "^1.0|^3.0",
-
-    "ext-openssl": "*",
-    "ext-json": "*"
   }
 }
